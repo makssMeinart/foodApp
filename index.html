@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- The pop up gonna go at the top -->
+    <div class="popup">
+      <div class="popup-inner">
+        <h3 class="popup-title">
+          The recipe
+        </h3>
+        <p id="recipe-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, facilis a sunt commodi nostrum ab! Repudiandae corrupti quis ipsa, suscipit ratione itaque sint, veritatis, illo placeat vero numquam ab fugit.
+          Suscipit inventore, magni tempora aperiam iure soluta fugiat dignissimos totam vel, quos numquam laudantium ipsum distinctio ipsa rerum eum recusandae dolor adipisci sit. Tenetur ad, aspernatur in veniam explicabo omnis.
+          Quod enim tenetur alias doloribus cumque nobis, at eligendi rem libero totam eaque eum repellendus praesentium accusantium assumenda fugiat debitis eos corporis cupiditate! Ipsa repellendus atque quos animi a pariatur?
+        </p>
+        <p id="recipe-video">
+          If you prefere watching a video on how to make it <a href="#" id="recipe-video__link">there you go!</a>
+        </p>
+      <button class="popup-close">x</button>
+      </div>
+    </div>
+
+    <main class="main">
+      <h1 class="header">Search recipe by typing ingredients</h1>
+      <form class="search">
+        <button id="search-btn" class="search-btn">
+          <!-- SVG -->
+          <svg
+            id="search-btn__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="136pt"
+            version="1.1"
+            viewBox="-1 0 136 136.21852"
+            width="136pt"
+          >
+            <g id="surface1">
+              <path
+                d="M 93.148438 80.832031 C 109.5 57.742188 104.03125 25.769531 80.941406 9.421875 C 57.851562 -6.925781 25.878906 -1.460938 9.53125 21.632812 C -6.816406 44.722656 -1.351562 76.691406 21.742188 93.039062 C 38.222656 104.707031 60.011719 105.605469 77.394531 95.339844 L 115.164062 132.882812 C 119.242188 137.175781 126.027344 137.347656 130.320312 133.269531 C 134.613281 129.195312 134.785156 122.410156 130.710938 118.117188 C 130.582031 117.980469 130.457031 117.855469 130.320312 117.726562 Z M 51.308594 84.332031 C 33.0625 84.335938 18.269531 69.554688 18.257812 51.308594 C 18.253906 33.0625 33.035156 18.269531 51.285156 18.261719 C 69.507812 18.253906 84.292969 33.011719 84.328125 51.234375 C 84.359375 69.484375 69.585938 84.300781 51.332031 84.332031 C 51.324219 84.332031 51.320312 84.332031 51.308594 84.332031 Z M 51.308594 84.332031 "
+                style="
+                  stroke: none;
+                  fill-rule: nonzero;
+                  fill: rgb(49, 49, 49);
+                  fill-opacity: 1;
+                "
+              />
+            </g>
+          </svg>
+        </button>
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Seach 100+ recipes"
+        />
+      </form>
+      <!-- Card holder -->
+      <section id="holder"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
