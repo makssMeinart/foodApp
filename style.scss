@@ -1,4 +1,6 @@
-*,*::after,*::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -7,8 +9,8 @@ img {
   max-height: 100%;
 }
 
-// Variables 
-$gray: rgba(56, 60, 73, .5);
+// Variables
+$gray: rgba(56, 60, 73, 0.5);
 $ligh-blue: rgb(230, 230, 236);
 $white: rgb(255, 251, 251);
 $accent: lightblue;
@@ -27,14 +29,12 @@ body.disabled {
   overflow: hidden;
 }
 
-
 // Sections
 .main {
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  
   #holder {
     margin-top: 5rem;
     grid-gap: 1rem;
@@ -44,15 +44,12 @@ body.disabled {
   }
 }
 
-
-
 .header {
   font-size: 3rem;
-  color: rgba($color: #000000, $alpha: .8);
+  color: rgba($color: #000000, $alpha: 0.8);
 }
 
-
-// The input 
+// The input
 .search {
   width: 550px;
   height: 55px;
@@ -60,14 +57,14 @@ body.disabled {
   border-radius: 30px;
   background-color: $white;
   overflow: hidden;
-  padding: 0 .8em;
+  padding: 0 0.8em;
   margin-top: 2rem;
-  box-shadow: 0 3px 5px 1px rgba($color: #000000, $alpha: .1);
-  
+  box-shadow: 0 3px 5px 1px rgba($color: #000000, $alpha: 0.1);
+
   .search-btn {
     width: 50px;
-    border:none;
-    margin-right: .8em;
+    border: none;
+    margin-right: 0.8em;
     cursor: pointer;
     background: transparent;
 
@@ -92,8 +89,6 @@ body.disabled {
   }
 }
 
-
-
 // Card Setup
 .card {
   display: flex;
@@ -106,8 +101,7 @@ body.disabled {
   cursor: pointer;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 5px 10px 1px rgba($color: #000000, $alpha: .2);
-
+  box-shadow: 0 5px 10px 1px rgba($color: #000000, $alpha: 0.2);
 
   #card-img {
     height: 170px;
@@ -121,13 +115,13 @@ body.disabled {
 
   .card-btn {
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
     border: 1px solid #000;
     background: #000;
     color: $white;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: .2s linear all;
+    transition: 0.2s linear all;
 
     &:hover {
       background-color: $white;
@@ -135,7 +129,6 @@ body.disabled {
     }
   }
 }
-
 
 .popup {
   position: absolute;
@@ -154,18 +147,19 @@ body.disabled {
     flex-direction: column;
     padding: 1.5rem;
     border-radius: 15px;
-    background-color: rgba(56, 60, 73, .8);
+    background-color: rgba(0, 0, 0, 1);
+
     position: relative;
   }
 
   .popup-title {
     font-size: 2rem;
     color: $white;
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
 
   #recipe-body {
-    font-size: .95em;
+    font-size: 0.95em;
     color: darken($white, 3);
     flex-grow: 1;
   }
